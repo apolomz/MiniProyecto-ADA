@@ -1,0 +1,18 @@
+Encuestados:
+1: Juan Perez, Experticia: 4, Opinion: 5
+2: Ana Gómez, Experticia: 3, Opinion: 2
+3: Carlos Díaz, Experticia: 5, Opinion: 5
+4: Laura Ruiz, Experticia: 2, Opinion: 3
+5: Mario Torres, Experticia: 1, Opinion: 1
+
+Tema 1: Educación
+Pregunta1.1: {1, 2, 3}
+Pregunta1.2: {2, 4, 5}
+
+Tema 2: Medio Ambiente
+Pregunta2.1: {1, 3, 5}
+Pregunta2.2: {2, 4}
+
+Tema 3: Transporte
+Pregunta3.1: {1, 2, 3, 4}
+Pregunta3.2: {5}
