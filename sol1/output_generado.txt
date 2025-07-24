@@ -42,6 +42,6 @@ Resultados:
   Pregunta con Mayor mediana de opinion: [7.0] Pregunta: Pregunta2.1
   Pregunta con menor mediana de opinion: [4] Pregunta: Pregunta2.2
   Pregunta con mayor moda de opinion: [7] Pregunta: Pregunta2.1
-  Pregunta con menor moda de opinion: [6] Pregunta: Pregunta1.1
+  Pregunta con menor moda de opinion: [0] Pregunta: Pregunta2.2
   Pregunta con mayor extremismo: [0.33] Pregunta: Pregunta1.2
   Pregunta con mayor consenso: [0.67] Pregunta: Pregunta1.1

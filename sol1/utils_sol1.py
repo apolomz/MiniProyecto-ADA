@@ -14,7 +14,7 @@ def calcular_mediana(lista):
     n = len(lista_ordenada)
     medio = n // 2
     if n % 2 == 0:
-        return (lista_ordenada[medio - 1] + lista_ordenada[medio]) / 2
+        return lista_ordenada[medio - 1]
     else:
         return lista_ordenada[medio]
 
@@ -67,6 +67,18 @@ def merge(izq, der):
     return resultado
 
 
+def ordenar_encuestados(encs):
+    # Bubble sort (puedes usar cualquier algoritmo)
+    n = len(encs)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            a, b = encs[j], encs[j + 1]
+            if (a.opinion < b.opinion) or \
+               (a.opinion == b.opinion and a.experticia < b.experticia):
+                encs[j], encs[j + 1] = encs[j + 1], encs[j]
+    return encs
+
+
 def cargar_datos_test(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as f:
         lineas = [linea.strip() for linea in f if linea.strip()]
@@ -116,7 +128,7 @@ def cargar_datos_test(ruta_archivo):
             pregunta_contador += 1
 
             pregunta = Pregunta(id_pregunta)
-            pregunta.encuestados = sorted(encs, key=lambda e: (-e.opinion, -e.experticia))
+            pregunta.encuestados = ordenar_encuestados(encs)
             pregunta.promedio_opinion = calcular_promedio(opiniones)
             pregunta.promedio_experticia = calcular_promedio(experticias)
             pregunta.mediana = calcular_mediana(opiniones)
@@ -157,7 +169,17 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
 
     # Lista de encuestados
     lineas.append("Lista de encuestados:")
-    encs = sorted(encuestados.values(), key=lambda e: e.id)
+
+    def ordenar_por_id(encs):
+        lista = list(encs)
+        n = len(lista)
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if lista[j].id > lista[j + 1].id:
+                    lista[j], lista[j + 1] = lista[j + 1], lista[j]
+        return lista
+
+    encs = ordenar_por_id(encuestados.values())
     for e in encs:
         lineas.append(f" ({e.id}, Nombre:'{e.nombre}', Experticia:{e.experticia}, Opinión:{e.opinion})")
     lineas.append("")
@@ -170,7 +192,6 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
     for tema in temas_ordenados:
         todas_preguntas.extend(tema.root_preguntas.recorrer_inorden())
 
-    # Por cada métrica, obtener la pregunta deseada
     def menor_valor(lista):
         return min(lista) if lista else None
 
@@ -181,7 +202,8 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
         mejor = None
         for p in preguntas:
             val = key_func(p)
-            if mejor is None or (val > key_func(mejor) if reverse else val < key_func(mejor)) or (val == key_func(mejor) and p.id_pregunta < mejor.id_pregunta):
+            if mejor is None or (val > key_func(mejor) if reverse else val < key_func(mejor)) or \
+               (val == key_func(mejor) and p.id_pregunta < mejor.id_pregunta):
                 mejor = p
         return mejor
 

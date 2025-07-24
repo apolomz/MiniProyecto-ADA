@@ -1,4 +1,4 @@
-from estructuras_sol2 import encuestado, Pregunta, Tema, ListaTemas
+from estructuras_sol2 import Encuestado, Pregunta, Tema, ListaTemas
 
 # Funciones estadísticas
 
@@ -12,7 +12,7 @@ def calcular_mediana(lista):
     n = len(lista_ordenada)
     medio = n // 2
     if n % 2 == 0:
-        return (lista_ordenada[medio - 1] + lista_ordenada[medio]) / 2
+        return lista_ordenada[medio - 1]
     else:
         return lista_ordenada[medio]
 
@@ -103,7 +103,7 @@ def cargar_datos_test(ruta_archivo):
         nombre = partes[0].strip()
         experticia = int(partes[1].split(':')[1].strip())
         opinion = int(partes[2].split(':')[1].strip())
-        encuestados[id_enc] = encuestado(id_enc, nombre, experticia, opinion)
+        encuestados[id_enc] = Encuestado(id_enc, nombre, experticia, opinion)
         i += 1
 
     preguntas_bloque = []
@@ -143,7 +143,7 @@ def cargar_datos_test(ruta_archivo):
             pregunta.extremismo = round(calcular_extremismo(opiniones) / len(opiniones), 2)
             pregunta.consenso = round(calcular_consenso(opiniones) / len(opiniones), 2)
 
-            tema.lista_preguntas.insertar(pregunta)
+            tema.lista_preguntas.insertar_ordenado(pregunta)
             tema.total_encuestados += len(encs)
 
         tema.recalcular_promedios()

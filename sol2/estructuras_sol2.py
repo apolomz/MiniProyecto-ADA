@@ -89,6 +89,16 @@ class Tema:
         self.promedio_experticia = 0
         self.total_encuestados = 0
 
+    def recalcular_promedios(self):
+        preguntas = self.lista_preguntas.recorrer_ordenado()
+        if not preguntas:
+            self.promedio_opinion = 0
+            self.promedio_experticia = 0
+            return
+        self.promedio_opinion = round(sum(p.promedio_opinion for p in preguntas) / len(preguntas), 2)
+        self.promedio_experticia = round(sum(p.promedio_experticia for p in preguntas) / len(preguntas), 2)
+
+
 
 class ListaTemas:
     def __init__(self):
@@ -122,10 +132,11 @@ class ListaTemas:
             anterior.siguiente = nuevo
             nuevo.siguiente = actual
 
-    def recorrer(self):
+    def recorrer_ordenado(self):
         temas = []
         actual = self.cabeza
         while actual:
             temas.append(actual.tema)
             actual = actual.siguiente
         return temas
+
