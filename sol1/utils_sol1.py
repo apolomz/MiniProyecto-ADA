@@ -92,9 +92,9 @@ def cargar_datos_test(ruta_archivo):
             preguntas_bloque.append(lineas[i])
         i += 1
 
-# Validar múltiplos de 2
-if len(preguntas_bloque) % 2 != 0:
-    raise ValueError("Bloques de preguntas mal formateados.")
+    # Validar múltiplos de 2
+    if len(preguntas_bloque) % 2 != 0:
+        raise ValueError("Bloques de preguntas mal formateados.")
 
 
     tema_contador = 1
