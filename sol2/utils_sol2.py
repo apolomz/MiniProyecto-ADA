@@ -1,12 +1,10 @@
-from estructuras_sol1 import encuestado, Pregunta, Tema, ABBTemas
+from estructuras_sol2 import encuestado, Pregunta, Tema, ListaTemas
 
+# Funciones estadísticas
 
-
-# Promedio
 def calcular_promedio(lista):
     return round(sum(lista) / len(lista), 2) if lista else 0
 
-# Mediana
 def calcular_mediana(lista):
     if not lista:
         return 0
@@ -18,7 +16,6 @@ def calcular_mediana(lista):
     else:
         return lista_ordenada[medio]
 
-# Moda
 def calcular_moda(lista):
     if not lista:
         return None
@@ -29,21 +26,17 @@ def calcular_moda(lista):
     modas = [k for k, v in frecuencias.items() if v == max_frecuencia]
     return min(modas)
 
-# Extremismo = cantidad de opiniones extremas (1 o 5)
 def calcular_extremismo(lista):
     return lista.count(1) + lista.count(5)
 
-# Consenso = número de veces que la mayoría dio la misma opinión
 def calcular_consenso(lista):
     if not lista:
         return 0
     frecuencias = {}
     for val in lista:
         frecuencias[val] = frecuencias.get(val, 0) + 1
-    max_frecuencia = max(frecuencias.values())
-    return max_frecuencia
+    return max(frecuencias.values())
 
-# Merge Sort (para mediana)
 def merge_sort(lista):
     if len(lista) <= 1:
         return lista
@@ -66,13 +59,41 @@ def merge(izq, der):
     resultado.extend(der[j:])
     return resultado
 
+# Insertion Sort para encuestados (por opinión y experticia)
+def insertion_sort_encuestados(encs):
+    for i in range(1, len(encs)):
+        actual = encs[i]
+        j = i - 1
+        while j >= 0 and (
+            actual.opinion > encs[j].opinion or
+            (actual.opinion == encs[j].opinion and actual.experticia > encs[j].experticia)
+        ):
+            encs[j + 1] = encs[j]
+            j -= 1
+        encs[j + 1] = actual
+    return encs
 
+# Insertion Sort por experticia y luego por ID
+def insertion_sort_por_experticia_y_id(encs):
+    for i in range(1, len(encs)):
+        actual = encs[i]
+        j = i - 1
+        while j >= 0 and (
+            actual.experticia > encs[j].experticia or
+            (actual.experticia == encs[j].experticia and actual.id > encs[j].id)
+        ):
+            encs[j + 1] = encs[j]
+            j -= 1
+        encs[j + 1] = actual
+    return encs
+
+# Cargar datos desde archivo
 def cargar_datos_test(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as f:
         lineas = [linea.strip() for linea in f if linea.strip()]
 
     encuestados = {}
-    temas_abb = ABBTemas()
+    lista_temas = ListaTemas()
     i = 0
 
     # Leer encuestados
@@ -85,20 +106,18 @@ def cargar_datos_test(ruta_archivo):
         encuestados[id_enc] = encuestado(id_enc, nombre, experticia, opinion)
         i += 1
 
-   # Leer bloques de preguntas: cada bloque tiene 2 líneas
     preguntas_bloque = []
     while i < len(lineas):
         if lineas[i].startswith('{'):
             preguntas_bloque.append(lineas[i])
         i += 1
 
-    # Validar múltiplos de 2
     if len(preguntas_bloque) % 2 != 0:
         raise ValueError("Bloques de preguntas mal formateados.")
 
-
     tema_contador = 1
     pregunta_contador = 1
+
     for t in range(0, len(preguntas_bloque), 2):
         nombre_tema = f"Tema {tema_contador}"
         tema = Tema(nombre_tema)
@@ -116,7 +135,7 @@ def cargar_datos_test(ruta_archivo):
             pregunta_contador += 1
 
             pregunta = Pregunta(id_pregunta)
-            pregunta.encuestados = sorted(encs, key=lambda e: (-e.opinion, -e.experticia))
+            pregunta.encuestados = insertion_sort_encuestados(encs)
             pregunta.promedio_opinion = calcular_promedio(opiniones)
             pregunta.promedio_experticia = calcular_promedio(experticias)
             pregunta.mediana = calcular_mediana(opiniones)
@@ -124,31 +143,26 @@ def cargar_datos_test(ruta_archivo):
             pregunta.extremismo = round(calcular_extremismo(opiniones) / len(opiniones), 2)
             pregunta.consenso = round(calcular_consenso(opiniones) / len(opiniones), 2)
 
-            tema.root_preguntas.insertar(pregunta)
+            tema.lista_preguntas.insertar(pregunta)
             tema.total_encuestados += len(encs)
 
-        # Calcular promedios del tema
-        preguntas = tema.root_preguntas.recorrer_inorden()
-        if preguntas:
-            tema.promedio_opinion = calcular_promedio([p.promedio_opinion for p in preguntas])
-            tema.promedio_experticia = calcular_promedio([p.promedio_experticia for p in preguntas])
-
-        temas_abb.insertar(tema)
+        tema.recalcular_promedios()
+        lista_temas.insertar(tema)
         tema_contador += 1
-        pregunta_contador = 1  # reset por tema
+        pregunta_contador = 1
 
-    return temas_abb, encuestados
+    return lista_temas, encuestados
 
-
-def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt"):
-    temas_ordenados = temas_abb.recorrer_inorden()
+def generar_salida(lista_temas, encuestados, archivo_salida="output_generado_sol2.txt"):
     lineas = []
-
     lineas.append("Resultados de la encuesta:\n")
+
+    # Recorrer temas ordenados
+    temas_ordenados = lista_temas.recorrer_ordenado()
 
     for tema in temas_ordenados:
         lineas.append(f"[{tema.promedio_opinion:.2f}] {tema.nombre}:")
-        preguntas_ordenadas = tema.root_preguntas.recorrer_inorden()
+        preguntas_ordenadas = tema.lista_preguntas.recorrer_ordenado()
         for pregunta in preguntas_ordenadas:
             ids = [str(e.id) for e in pregunta.encuestados]
             ids_str = ", ".join(ids)
@@ -157,32 +171,33 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
 
     # Lista de encuestados
     lineas.append("Lista de encuestados:")
-    encs = sorted(encuestados.values(), key=lambda e: e.id)
-    for e in encs:
+
+    encs_ordenados = list(encuestados.values())
+    encs_ordenados = insertion_sort_por_experticia_y_id(encs_ordenados)
+
+    for e in encs_ordenados:
         lineas.append(f" ({e.id}, Nombre:'{e.nombre}', Experticia:{e.experticia}, Opinión:{e.opinion})")
     lineas.append("")
 
-    # Analíticas finales
+    # Métricas finales
     lineas.append("Resultados:")
 
-    # Recolectar todas las preguntas
     todas_preguntas = []
     for tema in temas_ordenados:
-        todas_preguntas.extend(tema.root_preguntas.recorrer_inorden())
+        todas_preguntas.extend(tema.lista_preguntas.recorrer_ordenado())
 
-    # Por cada métrica, obtener la pregunta deseada
-    def menor_valor(lista):
-        return min(lista) if lista else None
-
-    def mayor_valor(lista):
-        return max(lista) if lista else None
-
-    def seleccionar_pregunta(preguntas, key_func, reverse=False):
+    def seleccionar_pregunta(preguntas, key_func, mayor=False):
         mejor = None
         for p in preguntas:
             val = key_func(p)
-            if mejor is None or (val > key_func(mejor) if reverse else val < key_func(mejor)) or (val == key_func(mejor) and p.id_pregunta < mejor.id_pregunta):
+            if mejor is None:
                 mejor = p
+            else:
+                mejor_val = key_func(mejor)
+                if (mayor and val > mejor_val) or (not mayor and val < mejor_val):
+                    mejor = p
+                elif val == mejor_val and p.id_pregunta < mejor.id_pregunta:
+                    mejor = p
         return mejor
 
     lineas.append(f"  Pregunta con mayor promedio de opinion: [{seleccionar_pregunta(todas_preguntas, lambda p: p.promedio_opinion, True).promedio_opinion:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.promedio_opinion, True).id_pregunta}")
@@ -200,11 +215,9 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
     lineas.append(f"  Pregunta con mayor extremismo: [{seleccionar_pregunta(todas_preguntas, lambda p: p.extremismo, True).extremismo:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.extremismo, True).id_pregunta}")
     lineas.append(f"  Pregunta con mayor consenso: [{seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).consenso:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).id_pregunta}")
 
-    # Mostrar por consola
     for linea in lineas:
         print(linea)
 
-    # Escribir en archivo
     with open(archivo_salida, "w", encoding="utf-8") as f:
         for linea in lineas:
             f.write(linea + "\n")
