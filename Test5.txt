@@ -1,0 +1,197 @@
+Persona 1, Experticia: 1, Opinión: 1
+Persona 2, Experticia: 2, Opinión: 2
+Persona 3, Experticia: 3, Opinión: 3
+Persona 4, Experticia: 4, Opinión: 4
+Persona 5, Experticia: 5, Opinión: 5
+Persona 6, Experticia: 6, Opinión: 6
+Persona 7, Experticia: 7, Opinión: 7
+Persona 8, Experticia: 8, Opinión: 8
+Persona 9, Experticia: 9, Opinión: 9
+Persona 10, Experticia: 10, Opinión: 10
+Persona 11, Experticia: 1, Opinión: 2
+Persona 12, Experticia: 2, Opinión: 3
+Persona 13, Experticia: 3, Opinión: 4
+Persona 14, Experticia: 4, Opinión: 5
+Persona 15, Experticia: 5, Opinión: 6
+Persona 16, Experticia: 6, Opinión: 7
+Persona 17, Experticia: 7, Opinión: 8
+Persona 18, Experticia: 8, Opinión: 9
+Persona 19, Experticia: 9, Opinión: 10
+Persona 20, Experticia: 10, Opinión: 1
+Persona 21, Experticia: 2, Opinión: 2
+Persona 22, Experticia: 3, Opinión: 3
+Persona 23, Experticia: 4, Opinión: 4
+Persona 24, Experticia: 5, Opinión: 5
+Persona 25, Experticia: 6, Opinión: 6
+Persona 26, Experticia: 7, Opinión: 7
+Persona 27, Experticia: 8, Opinión: 8
+Persona 28, Experticia: 9, Opinión: 9
+Persona 29, Experticia: 10, Opinión: 10
+Persona 30, Experticia: 1, Opinión: 3
+Persona 31, Experticia: 2, Opinión: 4
+Persona 32, Experticia: 3, Opinión: 5
+Persona 33, Experticia: 4, Opinión: 6
+Persona 34, Experticia: 5, Opinión: 7
+Persona 35, Experticia: 6, Opinión: 8
+Persona 36, Experticia: 7, Opinión: 9
+Persona 37, Experticia: 8, Opinión: 10
+Persona 38, Experticia: 9, Opinión: 1
+Persona 39, Experticia: 10, Opinión: 2
+Persona 40, Experticia: 1, Opinión: 3
+Persona 41, Experticia: 2, Opinión: 4
+Persona 42, Experticia: 3, Opinión: 5
+Persona 43, Experticia: 4, Opinión: 6
+Persona 44, Experticia: 5, Opinión: 7
+Persona 45, Experticia: 6, Opinión: 8
+Persona 46, Experticia: 7, Opinión: 9
+Persona 47, Experticia: 8, Opinión: 10
+Persona 48, Experticia: 9, Opinión: 1
+Persona 49, Experticia: 10, Opinión: 2
+Persona 50, Experticia: 1, Opinión: 3
+Persona 51, Experticia: 2, Opinión: 4
+Persona 52, Experticia: 3, Opinión: 5
+Persona 53, Experticia: 4, Opinión: 6
+Persona 54, Experticia: 5, Opinión: 7
+Persona 55, Experticia: 6, Opinión: 8
+Persona 56, Experticia: 7, Opinión: 9
+Persona 57, Experticia: 8, Opinión: 10
+Persona 58, Experticia: 9, Opinión: 1
+Persona 59, Experticia: 10, Opinión: 2
+Persona 60, Experticia: 1, Opinión: 3
+Persona 61, Experticia: 2, Opinión: 4
+Persona 62, Experticia: 3, Opinión: 5
+Persona 63, Experticia: 4, Opinión: 6
+Persona 64, Experticia: 5, Opinión: 7
+Persona 65, Experticia: 6, Opinión: 8
+Persona 66, Experticia: 7, Opinión: 9
+Persona 67, Experticia: 8, Opinión: 10
+Persona 68, Experticia: 9, Opinión: 1
+Persona 69, Experticia: 10, Opinión: 2
+Persona 70, Experticia: 1, Opinión: 3
+Persona 71, Experticia: 2, Opinión: 4
+Persona 72, Experticia: 3, Opinión: 5
+Persona 73, Experticia: 4, Opinión: 6
+Persona 74, Experticia: 5, Opinión: 7
+Persona 75, Experticia: 6, Opinión: 8
+Persona 76, Experticia: 7, Opinión: 9
+Persona 77, Experticia: 8, Opinión: 10
+Persona 78, Experticia: 9, Opinión: 1
+Persona 79, Experticia: 10, Opinión: 2
+Persona 80, Experticia: 1, Opinión: 3
+Persona 81, Experticia: 2, Opinión: 4
+Persona 82, Experticia: 3, Opinión: 5
+Persona 83, Experticia: 4, Opinión: 6
+Persona 84, Experticia: 5, Opinión: 7
+Persona 85, Experticia: 6, Opinión: 8
+Persona 86, Experticia: 7, Opinión: 9
+Persona 87, Experticia: 8, Opinión: 10
+Persona 88, Experticia: 9, Opinión: 1
+Persona 89, Experticia: 10, Opinión: 2
+Persona 90, Experticia: 1, Opinión: 3
+Persona 91, Experticia: 2, Opinión: 4
+Persona 92, Experticia: 3, Opinión: 5
+Persona 93, Experticia: 4, Opinión: 6
+Persona 94, Experticia: 5, Opinión: 7
+Persona 95, Experticia: 6, Opinión: 8
+Persona 96, Experticia: 7, Opinión: 9
+Persona 97, Experticia: 8, Opinión: 10
+Persona 98, Experticia: 9, Opinión: 1
+Persona 99, Experticia: 10, Opinión: 2
+Persona 100, Experticia: 1, Opinión: 3
+Persona 101, Experticia: 2, Opinión: 4
+Persona 102, Experticia: 3, Opinión: 5
+Persona 103, Experticia: 4, Opinión: 6
+Persona 104, Experticia: 5, Opinión: 7
+Persona 105, Experticia: 6, Opinión: 8
+Persona 106, Experticia: 7, Opinión: 9
+Persona 107, Experticia: 8, Opinión: 10
+Persona 108, Experticia: 9, Opinión: 1
+Persona 109, Experticia: 10, Opinión: 2
+Persona 110, Experticia: 1, Opinión: 3
+Persona 111, Experticia: 2, Opinión: 4
+Persona 112, Experticia: 3, Opinión: 5
+Persona 113, Experticia: 4, Opinión: 6
+Persona 114, Experticia: 5, Opinión: 7
+Persona 115, Experticia: 6, Opinión: 8
+Persona 116, Experticia: 7, Opinión: 9
+Persona 117, Experticia: 8, Opinión: 10
+Persona 118, Experticia: 9, Opinión: 1
+Persona 119, Experticia: 10, Opinión: 2
+Persona 120, Experticia: 1, Opinión: 3
+Persona 121, Experticia: 2, Opinión: 4
+Persona 122, Experticia: 3, Opinión: 5
+Persona 123, Experticia: 4, Opinión: 6
+Persona 124, Experticia: 5, Opinión: 7
+Persona 125, Experticia: 6, Opinión: 8
+Persona 126, Experticia: 7, Opinión: 9
+Persona 127, Experticia: 8, Opinión: 10
+Persona 128, Experticia: 9, Opinión: 1
+Persona 129, Experticia: 10, Opinión: 2
+Persona 130, Experticia: 1, Opinión: 3
+Persona 131, Experticia: 2, Opinión: 4
+Persona 132, Experticia: 3, Opinión: 5
+Persona 133, Experticia: 4, Opinión: 6
+Persona 134, Experticia: 5, Opinión: 7
+Persona 135, Experticia: 6, Opinión: 8
+Persona 136, Experticia: 7, Opinión: 9
+Persona 137, Experticia: 8, Opinión: 10
+Persona 138, Experticia: 9, Opinión: 1
+Persona 139, Experticia: 10, Opinión: 2
+Persona 140, Experticia: 1, Opinión: 3
+Persona 141, Experticia: 2, Opinión: 4
+Persona 142, Experticia: 3, Opinión: 5
+Persona 143, Experticia: 4, Opinión: 6
+Persona 144, Experticia: 5, Opinión: 7
+Persona 145, Experticia: 6, Opinión: 8
+Persona 146, Experticia: 7, Opinión: 9
+Persona 147, Experticia: 8, Opinión: 10
+Persona 148, Experticia: 9, Opinión: 1
+Persona 149, Experticia: 10, Opinión: 2
+Persona 150, Experticia: 1, Opinión: 3
+Persona 151, Experticia: 2, Opinión: 4
+Persona 152, Experticia: 3, Opinión: 5
+Persona 153, Experticia: 4, Opinión: 6
+Persona 154, Experticia: 5, Opinión: 7
+Persona 155, Experticia: 6, Opinión: 8
+Persona 156, Experticia: 7, Opinión: 9
+Persona 157, Experticia: 8, Opinión: 10
+Persona 158, Experticia: 9, Opinión: 1
+Persona 159, Experticia: 10, Opinión: 2
+Persona 160, Experticia: 1, Opinión: 3
+
+{1, 2, 3, 4, 5}
+{6, 7, 8, 9, 10}
+{11, 12, 13, 14, 15}
+{16, 17, 18, 19, 20}
+{21, 22, 23, 24, 25}
+{26, 27, 28, 29, 30}
+
+{31, 32, 33, 34, 35}
+{36, 37, 38, 39, 40}
+{41, 42, 43, 44, 45}
+{46, 47, 48, 49, 50}
+{51, 52, 53, 54, 55}
+{56, 57, 58, 59, 60}
+
+{61, 62, 63, 64, 65}
+{66, 67, 68, 69, 70}
+{71, 72, 73, 74, 75}
+{76, 77, 78, 79, 80}
+{81, 82, 83, 84, 85}
+{86, 87, 88, 89, 90}
+
+{91, 92, 93, 94, 95}
+{96, 97, 98, 99, 100}
+{101, 102, 103, 104, 105}
+{106, 107, 108, 109, 110}
+{111, 112, 113, 114, 115}
+{116, 117, 118, 119, 120}
+
+{121, 122, 123, 124, 125}
+{126, 127, 128, 129, 130}
+{131, 132, 133, 134, 135}
+{136, 137, 138, 139, 140}
+{141, 142, 143, 144, 145}
+{146, 147, 148, 149, 150}
+{151, 152, 153, 154, 155}
+{156, 157, 158, 159, 160}

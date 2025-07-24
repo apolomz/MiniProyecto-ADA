@@ -1,0 +1,239 @@
+Resultados de la encuesta:
+
+[5.70] Tema 3:
+ [7.40] Pregunta3.2: (29, 28, 27, 26, 30)
+ [4.00] Pregunta3.1: (25, 24, 23, 22, 21)
+
+[5.50] Tema 1:
+ [8.00] Pregunta1.2: (10, 9, 8, 7, 6)
+ [3.00] Pregunta1.1: (5, 4, 3, 2, 1)
+
+[5.50] Tema 2:
+ [7.00] Pregunta2.2: (19, 18, 17, 16, 20)
+ [4.00] Pregunta2.1: (15, 14, 13, 12, 11)
+
+[5.50] Tema 4:
+ [6.00] Pregunta4.1: (35, 34, 33, 32, 31)
+ [5.00] Pregunta4.2: (37, 36, 40, 39, 38)
+
+[5.50] Tema 5:
+ [6.00] Pregunta5.1: (45, 44, 43, 42, 41)
+ [5.00] Pregunta5.2: (47, 46, 50, 49, 48)
+
+[5.50] Tema 6:
+ [6.00] Pregunta6.1: (55, 54, 53, 52, 51)
+ [5.00] Pregunta6.2: (57, 56, 60, 59, 58)
+
+[5.50] Tema 7:
+ [6.00] Pregunta7.1: (65, 64, 63, 62, 61)
+ [5.00] Pregunta7.2: (67, 66, 70, 69, 68)
+
+[5.50] Tema 8:
+ [6.00] Pregunta8.1: (75, 74, 73, 72, 71)
+ [5.00] Pregunta8.2: (77, 76, 80, 79, 78)
+
+[5.50] Tema 9:
+ [6.00] Pregunta9.1: (85, 84, 83, 82, 81)
+ [5.00] Pregunta9.2: (87, 86, 90, 89, 88)
+
+[5.50] Tema 10:
+ [6.00] Pregunta10.1: (95, 94, 93, 92, 91)
+ [5.00] Pregunta10.2: (97, 96, 100, 99, 98)
+
+[5.50] Tema 11:
+ [6.00] Pregunta11.1: (105, 104, 103, 102, 101)
+ [5.00] Pregunta11.2: (107, 106, 110, 109, 108)
+
+[5.50] Tema 12:
+ [6.00] Pregunta12.1: (115, 114, 113, 112, 111)
+ [5.00] Pregunta12.2: (117, 116, 120, 119, 118)
+
+[5.50] Tema 13:
+ [6.00] Pregunta13.1: (125, 124, 123, 122, 121)
+ [5.00] Pregunta13.2: (127, 126, 130, 129, 128)
+
+[5.50] Tema 14:
+ [6.00] Pregunta14.1: (135, 134, 133, 132, 131)
+ [5.00] Pregunta14.2: (137, 136, 140, 139, 138)
+
+[5.50] Tema 15:
+ [6.00] Pregunta15.1: (145, 144, 143, 142, 141)
+ [5.00] Pregunta15.2: (147, 146, 150, 149, 148)
+
+[5.50] Tema 16:
+ [6.00] Pregunta16.1: (155, 154, 153, 152, 151)
+ [5.00] Pregunta16.2: (157, 156, 160, 159, 158)
+
+Lista de encuestados:
+ (1, Nombre:'Persona 1', Experticia:1, Opinión:1)
+ (2, Nombre:'Persona 2', Experticia:2, Opinión:2)
+ (3, Nombre:'Persona 3', Experticia:3, Opinión:3)
+ (4, Nombre:'Persona 4', Experticia:4, Opinión:4)
+ (5, Nombre:'Persona 5', Experticia:5, Opinión:5)
+ (6, Nombre:'Persona 6', Experticia:6, Opinión:6)
+ (7, Nombre:'Persona 7', Experticia:7, Opinión:7)
+ (8, Nombre:'Persona 8', Experticia:8, Opinión:8)
+ (9, Nombre:'Persona 9', Experticia:9, Opinión:9)
+ (10, Nombre:'Persona 10', Experticia:10, Opinión:10)
+ (11, Nombre:'Persona 11', Experticia:1, Opinión:2)
+ (12, Nombre:'Persona 12', Experticia:2, Opinión:3)
+ (13, Nombre:'Persona 13', Experticia:3, Opinión:4)
+ (14, Nombre:'Persona 14', Experticia:4, Opinión:5)
+ (15, Nombre:'Persona 15', Experticia:5, Opinión:6)
+ (16, Nombre:'Persona 16', Experticia:6, Opinión:7)
+ (17, Nombre:'Persona 17', Experticia:7, Opinión:8)
+ (18, Nombre:'Persona 18', Experticia:8, Opinión:9)
+ (19, Nombre:'Persona 19', Experticia:9, Opinión:10)
+ (20, Nombre:'Persona 20', Experticia:10, Opinión:1)
+ (21, Nombre:'Persona 21', Experticia:2, Opinión:2)
+ (22, Nombre:'Persona 22', Experticia:3, Opinión:3)
+ (23, Nombre:'Persona 23', Experticia:4, Opinión:4)
+ (24, Nombre:'Persona 24', Experticia:5, Opinión:5)
+ (25, Nombre:'Persona 25', Experticia:6, Opinión:6)
+ (26, Nombre:'Persona 26', Experticia:7, Opinión:7)
+ (27, Nombre:'Persona 27', Experticia:8, Opinión:8)
+ (28, Nombre:'Persona 28', Experticia:9, Opinión:9)
+ (29, Nombre:'Persona 29', Experticia:10, Opinión:10)
+ (30, Nombre:'Persona 30', Experticia:1, Opinión:3)
+ (31, Nombre:'Persona 31', Experticia:2, Opinión:4)
+ (32, Nombre:'Persona 32', Experticia:3, Opinión:5)
+ (33, Nombre:'Persona 33', Experticia:4, Opinión:6)
+ (34, Nombre:'Persona 34', Experticia:5, Opinión:7)
+ (35, Nombre:'Persona 35', Experticia:6, Opinión:8)
+ (36, Nombre:'Persona 36', Experticia:7, Opinión:9)
+ (37, Nombre:'Persona 37', Experticia:8, Opinión:10)
+ (38, Nombre:'Persona 38', Experticia:9, Opinión:1)
+ (39, Nombre:'Persona 39', Experticia:10, Opinión:2)
+ (40, Nombre:'Persona 40', Experticia:1, Opinión:3)
+ (41, Nombre:'Persona 41', Experticia:2, Opinión:4)
+ (42, Nombre:'Persona 42', Experticia:3, Opinión:5)
+ (43, Nombre:'Persona 43', Experticia:4, Opinión:6)
+ (44, Nombre:'Persona 44', Experticia:5, Opinión:7)
+ (45, Nombre:'Persona 45', Experticia:6, Opinión:8)
+ (46, Nombre:'Persona 46', Experticia:7, Opinión:9)
+ (47, Nombre:'Persona 47', Experticia:8, Opinión:10)
+ (48, Nombre:'Persona 48', Experticia:9, Opinión:1)
+ (49, Nombre:'Persona 49', Experticia:10, Opinión:2)
+ (50, Nombre:'Persona 50', Experticia:1, Opinión:3)
+ (51, Nombre:'Persona 51', Experticia:2, Opinión:4)
+ (52, Nombre:'Persona 52', Experticia:3, Opinión:5)
+ (53, Nombre:'Persona 53', Experticia:4, Opinión:6)
+ (54, Nombre:'Persona 54', Experticia:5, Opinión:7)
+ (55, Nombre:'Persona 55', Experticia:6, Opinión:8)
+ (56, Nombre:'Persona 56', Experticia:7, Opinión:9)
+ (57, Nombre:'Persona 57', Experticia:8, Opinión:10)
+ (58, Nombre:'Persona 58', Experticia:9, Opinión:1)
+ (59, Nombre:'Persona 59', Experticia:10, Opinión:2)
+ (60, Nombre:'Persona 60', Experticia:1, Opinión:3)
+ (61, Nombre:'Persona 61', Experticia:2, Opinión:4)
+ (62, Nombre:'Persona 62', Experticia:3, Opinión:5)
+ (63, Nombre:'Persona 63', Experticia:4, Opinión:6)
+ (64, Nombre:'Persona 64', Experticia:5, Opinión:7)
+ (65, Nombre:'Persona 65', Experticia:6, Opinión:8)
+ (66, Nombre:'Persona 66', Experticia:7, Opinión:9)
+ (67, Nombre:'Persona 67', Experticia:8, Opinión:10)
+ (68, Nombre:'Persona 68', Experticia:9, Opinión:1)
+ (69, Nombre:'Persona 69', Experticia:10, Opinión:2)
+ (70, Nombre:'Persona 70', Experticia:1, Opinión:3)
+ (71, Nombre:'Persona 71', Experticia:2, Opinión:4)
+ (72, Nombre:'Persona 72', Experticia:3, Opinión:5)
+ (73, Nombre:'Persona 73', Experticia:4, Opinión:6)
+ (74, Nombre:'Persona 74', Experticia:5, Opinión:7)
+ (75, Nombre:'Persona 75', Experticia:6, Opinión:8)
+ (76, Nombre:'Persona 76', Experticia:7, Opinión:9)
+ (77, Nombre:'Persona 77', Experticia:8, Opinión:10)
+ (78, Nombre:'Persona 78', Experticia:9, Opinión:1)
+ (79, Nombre:'Persona 79', Experticia:10, Opinión:2)
+ (80, Nombre:'Persona 80', Experticia:1, Opinión:3)
+ (81, Nombre:'Persona 81', Experticia:2, Opinión:4)
+ (82, Nombre:'Persona 82', Experticia:3, Opinión:5)
+ (83, Nombre:'Persona 83', Experticia:4, Opinión:6)
+ (84, Nombre:'Persona 84', Experticia:5, Opinión:7)
+ (85, Nombre:'Persona 85', Experticia:6, Opinión:8)
+ (86, Nombre:'Persona 86', Experticia:7, Opinión:9)
+ (87, Nombre:'Persona 87', Experticia:8, Opinión:10)
+ (88, Nombre:'Persona 88', Experticia:9, Opinión:1)
+ (89, Nombre:'Persona 89', Experticia:10, Opinión:2)
+ (90, Nombre:'Persona 90', Experticia:1, Opinión:3)
+ (91, Nombre:'Persona 91', Experticia:2, Opinión:4)
+ (92, Nombre:'Persona 92', Experticia:3, Opinión:5)
+ (93, Nombre:'Persona 93', Experticia:4, Opinión:6)
+ (94, Nombre:'Persona 94', Experticia:5, Opinión:7)
+ (95, Nombre:'Persona 95', Experticia:6, Opinión:8)
+ (96, Nombre:'Persona 96', Experticia:7, Opinión:9)
+ (97, Nombre:'Persona 97', Experticia:8, Opinión:10)
+ (98, Nombre:'Persona 98', Experticia:9, Opinión:1)
+ (99, Nombre:'Persona 99', Experticia:10, Opinión:2)
+ (100, Nombre:'Persona 100', Experticia:1, Opinión:3)
+ (101, Nombre:'Persona 101', Experticia:2, Opinión:4)
+ (102, Nombre:'Persona 102', Experticia:3, Opinión:5)
+ (103, Nombre:'Persona 103', Experticia:4, Opinión:6)
+ (104, Nombre:'Persona 104', Experticia:5, Opinión:7)
+ (105, Nombre:'Persona 105', Experticia:6, Opinión:8)
+ (106, Nombre:'Persona 106', Experticia:7, Opinión:9)
+ (107, Nombre:'Persona 107', Experticia:8, Opinión:10)
+ (108, Nombre:'Persona 108', Experticia:9, Opinión:1)
+ (109, Nombre:'Persona 109', Experticia:10, Opinión:2)
+ (110, Nombre:'Persona 110', Experticia:1, Opinión:3)
+ (111, Nombre:'Persona 111', Experticia:2, Opinión:4)
+ (112, Nombre:'Persona 112', Experticia:3, Opinión:5)
+ (113, Nombre:'Persona 113', Experticia:4, Opinión:6)
+ (114, Nombre:'Persona 114', Experticia:5, Opinión:7)
+ (115, Nombre:'Persona 115', Experticia:6, Opinión:8)
+ (116, Nombre:'Persona 116', Experticia:7, Opinión:9)
+ (117, Nombre:'Persona 117', Experticia:8, Opinión:10)
+ (118, Nombre:'Persona 118', Experticia:9, Opinión:1)
+ (119, Nombre:'Persona 119', Experticia:10, Opinión:2)
+ (120, Nombre:'Persona 120', Experticia:1, Opinión:3)
+ (121, Nombre:'Persona 121', Experticia:2, Opinión:4)
+ (122, Nombre:'Persona 122', Experticia:3, Opinión:5)
+ (123, Nombre:'Persona 123', Experticia:4, Opinión:6)
+ (124, Nombre:'Persona 124', Experticia:5, Opinión:7)
+ (125, Nombre:'Persona 125', Experticia:6, Opinión:8)
+ (126, Nombre:'Persona 126', Experticia:7, Opinión:9)
+ (127, Nombre:'Persona 127', Experticia:8, Opinión:10)
+ (128, Nombre:'Persona 128', Experticia:9, Opinión:1)
+ (129, Nombre:'Persona 129', Experticia:10, Opinión:2)
+ (130, Nombre:'Persona 130', Experticia:1, Opinión:3)
+ (131, Nombre:'Persona 131', Experticia:2, Opinión:4)
+ (132, Nombre:'Persona 132', Experticia:3, Opinión:5)
+ (133, Nombre:'Persona 133', Experticia:4, Opinión:6)
+ (134, Nombre:'Persona 134', Experticia:5, Opinión:7)
+ (135, Nombre:'Persona 135', Experticia:6, Opinión:8)
+ (136, Nombre:'Persona 136', Experticia:7, Opinión:9)
+ (137, Nombre:'Persona 137', Experticia:8, Opinión:10)
+ (138, Nombre:'Persona 138', Experticia:9, Opinión:1)
+ (139, Nombre:'Persona 139', Experticia:10, Opinión:2)
+ (140, Nombre:'Persona 140', Experticia:1, Opinión:3)
+ (141, Nombre:'Persona 141', Experticia:2, Opinión:4)
+ (142, Nombre:'Persona 142', Experticia:3, Opinión:5)
+ (143, Nombre:'Persona 143', Experticia:4, Opinión:6)
+ (144, Nombre:'Persona 144', Experticia:5, Opinión:7)
+ (145, Nombre:'Persona 145', Experticia:6, Opinión:8)
+ (146, Nombre:'Persona 146', Experticia:7, Opinión:9)
+ (147, Nombre:'Persona 147', Experticia:8, Opinión:10)
+ (148, Nombre:'Persona 148', Experticia:9, Opinión:1)
+ (149, Nombre:'Persona 149', Experticia:10, Opinión:2)
+ (150, Nombre:'Persona 150', Experticia:1, Opinión:3)
+ (151, Nombre:'Persona 151', Experticia:2, Opinión:4)
+ (152, Nombre:'Persona 152', Experticia:3, Opinión:5)
+ (153, Nombre:'Persona 153', Experticia:4, Opinión:6)
+ (154, Nombre:'Persona 154', Experticia:5, Opinión:7)
+ (155, Nombre:'Persona 155', Experticia:6, Opinión:8)
+ (156, Nombre:'Persona 156', Experticia:7, Opinión:9)
+ (157, Nombre:'Persona 157', Experticia:8, Opinión:10)
+ (158, Nombre:'Persona 158', Experticia:9, Opinión:1)
+ (159, Nombre:'Persona 159', Experticia:10, Opinión:2)
+ (160, Nombre:'Persona 160', Experticia:1, Opinión:3)
+
+Resultados:
+  Pregunta con mayor promedio de opinion: [8.00] Pregunta: Pregunta1.2
+  Pregunta con menor promedio de opinion: [3.00] Pregunta: Pregunta1.1
+  Pregunta con mayor promedio de experticia: [8.00] Pregunta: Pregunta1.2
+  Pregunta con menor promedio de experticia: [3.00] Pregunta: Pregunta1.1
+  Pregunta con Mayor mediana de opinion: [8] Pregunta: Pregunta1.2
+  Pregunta con menor mediana de opinion: [3] Pregunta: Pregunta1.1
+  Pregunta con mayor moda de opinion: [6] Pregunta: Pregunta1.2
+  Pregunta con menor moda de opinion: [1] Pregunta: Pregunta1.1
+  Pregunta con mayor extremismo: [0.40] Pregunta: Pregunta1.1
+  Pregunta con mayor consenso: [0.20] Pregunta: Pregunta1.1

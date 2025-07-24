@@ -1,4 +1,4 @@
-from estructuras_sol2 import Encuestado, Pregunta, Tema, ListaTemas
+from sol2.estructuras_sol2 import Encuestado, Pregunta, Tema, ListaTemas
 
 # Funciones estadísticas
 
@@ -153,7 +153,7 @@ def cargar_datos_test(ruta_archivo):
 
     return lista_temas, encuestados
 
-def generar_salida(lista_temas, encuestados, archivo_salida="output_generado_sol2.txt"):
+def generar_salida(lista_temas, encuestados, archivo_salida="output_generado_sol2.txt", imprimir=True):
     lineas = []
     lineas.append("Resultados de la encuesta:\n")
 
@@ -215,8 +215,9 @@ def generar_salida(lista_temas, encuestados, archivo_salida="output_generado_sol
     lineas.append(f"  Pregunta con mayor extremismo: [{seleccionar_pregunta(todas_preguntas, lambda p: p.extremismo, True).extremismo:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.extremismo, True).id_pregunta}")
     lineas.append(f"  Pregunta con mayor consenso: [{seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).consenso:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).id_pregunta}")
 
-    for linea in lineas:
-        print(linea)
+    if imprimir:
+        for linea in lineas:
+            print(linea)
 
     with open(archivo_salida, "w", encoding="utf-8") as f:
         for linea in lineas:

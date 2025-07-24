@@ -1,4 +1,4 @@
-from estructuras_sol1 import encuestado, Pregunta, Tema, ABBTemas
+from sol1.estructuras_sol1 import encuestado, Pregunta, Tema, ABBTemas
 
 
 
@@ -67,8 +67,7 @@ def merge(izq, der):
     return resultado
 
 
-def ordenar_encuestados(encs):
-    # Bubble sort (puedes usar cualquier algoritmo)
+def Bubble_sort(encs):
     n = len(encs)
     for i in range(n):
         for j in range(0, n - i - 1):
@@ -128,7 +127,7 @@ def cargar_datos_test(ruta_archivo):
             pregunta_contador += 1
 
             pregunta = Pregunta(id_pregunta)
-            pregunta.encuestados = ordenar_encuestados(encs)
+            pregunta.encuestados = Bubble_sort(encs)
             pregunta.promedio_opinion = calcular_promedio(opiniones)
             pregunta.promedio_experticia = calcular_promedio(experticias)
             pregunta.mediana = calcular_mediana(opiniones)
@@ -152,7 +151,7 @@ def cargar_datos_test(ruta_archivo):
     return temas_abb, encuestados
 
 
-def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt"):
+def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt", imprimir=True):
     temas_ordenados = temas_abb.recorrer_inorden()
     lineas = []
 
@@ -223,8 +222,9 @@ def generar_salida(temas_abb, encuestados, archivo_salida="output_generado.txt")
     lineas.append(f"  Pregunta con mayor consenso: [{seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).consenso:.2f}] Pregunta: {seleccionar_pregunta(todas_preguntas, lambda p: p.consenso, True).id_pregunta}")
 
     # Mostrar por consola
-    for linea in lineas:
-        print(linea)
+    if imprimir:
+        for linea in lineas:
+            print(linea)
 
     # Escribir en archivo
     with open(archivo_salida, "w", encoding="utf-8") as f:
