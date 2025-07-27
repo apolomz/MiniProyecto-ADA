@@ -1,0 +1,40 @@
+
+**Jhoan Sebastian Fernández**  
+Código: 2222772  
+Universidad del Valle - Escuela de Ingeniería de Sistemas y Computación  
+
+
+
+Se desarrollaron dos enfoques totalmente distintos:
+- **Solución 1:** Uso de Árboles Binarios de Búsqueda (ABB).
+- **Solución 2:** Uso de listas enlazadas y doblemente enlazadas.
+
+Ambas soluciones procesan encuestas, calculan estadísticas (promedio, mediana, moda, consenso, extremismo), ordenan las preguntas dentro de los temas y los temas entre sí, y generan una salida estructurada.
+
+---
+
+Contenido
+
+- `sol1/`: Contiene el código fuente de la primera solución (ABB).
+- `sol2/`: Contiene el código fuente de la segunda solución (listas enlazadas).
+- `test...`: Archivos de prueba (`Test1.txt` a `Test5.txt`) con distintos tamaños de entrada.
+- `comparacion_tiempos.py`: Script para medir y comparar tiempos de ejecución de ambas soluciones.
+- `grafico.py`: Script para generar gráficas de tiempo vs tamaño de entrada.
+
+
+---
+
+- Python 3.10+
+- Librerías:
+  - `matplotlib` (para generar gráficos)
+
+Instalación de dependencias:
+bash
+pip install matplotlib
+
+### Correr el código desde la terminal:
+### ejecutar la comparación de tiempos:
+python comparacion_tiempos.py
+
+### Correr cada main
+ingresando en cada carpeta se pueden correr ambos main por separado.    
